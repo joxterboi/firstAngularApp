@@ -34,7 +34,7 @@
       <input [(ngModel)]="user.email" [ngClass]="{'is-invalid':userEmail.errors && userEmail.touched}" type="email" class="form-control"
         name="email" #userEmail="ngModel" required
         pattern="[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?">
-      <div class="invalid-feedback" [hidden]="!userEmail.errors?.required">Last name required</div>
+      <div class="invalid-feedback" [hidden]="!userEmail.errors?.required">Email required</div>
       <div class="invalid-feedback" [hidden]="!userEmail.errors?.pattern">Email is not valid</div>
     </div>
 
