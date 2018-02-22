@@ -5,7 +5,7 @@ import { Observable } from "rxjs/Observable";
 import { Post } from '../models/Post'
 
 const httpOptions = {
-  headers: new HttpHeaders({'Content-Type': 'application/jason'})
+  headers: new HttpHeaders({'Content-Type': 'application/json'})
 }
 
 @Injectable()

@@ -20,7 +20,7 @@ export class PostFormComponent implements OnInit {
 
   addPost(title, body) {
     if (!title || !body) {
-      alert('Please add post')
+      alert('Please add post');
     } else {
       this.postService.savePost({ title, body } as Post).subscribe(post => {
         this.newPost.emit(post);
